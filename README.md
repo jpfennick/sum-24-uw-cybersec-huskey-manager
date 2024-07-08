@@ -25,7 +25,7 @@ Loggly is a cloud-based log management and analytics service that can allow us t
 You need to copy the customer token shown on this page. This is what will tell our web application to send our logs to the correct Loggly account.
 
 ## Part 2: Adding Loggly to our web app.
-Now that we have made our Loggly account and retrieved our customer token, we can add it to our web application! Our developers have already provided us with the logger component in `loggly-logger.php`:
+Now that we have made our Loggly account and retrieved our customer token, we can add it to our web application! Our developers have sent us the code for our  `loggly-logger.php` component:
 
 ```
 <?php
@@ -112,7 +112,7 @@ Now that we understand how our logger component works, let's go ahead and get st
 
     This does exactly what it says, it 'includes' the logger component so that we can use it in our program. Paste this after the `session_start();` line in `login.php`.
 
-    Next, lets add the following line within the else statement on line 48. This if-else checks if the login credentials provided by the user are valid against our MySQL database. If they are, they will be redirected to `index.php`, and cookie will be set with their username. If they are invalid, they will get an error that the credentials were invalid. If we add the following line to the else portion, it will log every time a user fails a login attempt. This can be an indication of an attack!
+    Next, lets add the following line within the else statement. This if-else checks if the login credentials provided by the user are valid against our MySQL database. If they are, they will be redirected to `index.php`, and cookie will be set with their username. If they are invalid, they will get an error that the credentials were invalid. If we add the following line to the else portion, it will log every time a user fails a login attempt. This can be an indication of an attack!
 
     ```
     $logger->warning("Login failed for username: $username");
@@ -134,15 +134,15 @@ Now that we understand how our logger component works, let's go ahead and get st
 
 ## Part 3: What to log?
 
-Now that we have successfully set up loggly, we need to decide what events we want to log. With your group, come up with at least 5 events in your password manager that should be logged in loggly, and add the appropriate code to generate logs in loggly. Remember to first 'include' the loggly components (and remember that the pathing to the loggly component is relative!) and add the `$logger` message to those events.
+Now that we have successfully set up loggly, we need to decide what events we want to log. With your group, come up with at least 3 additional events in your password manager that should be logged in loggly, and add the appropriate code to generate logs in loggly. Remember to first 'include' the loggly components (and remember that the pathing to the loggly component is relative!) and add the `$logger` message to those events.
 
-Include screenshots in your lab writeup of the logs you generate!
+Include screenshots in your lab writeup of the logs you generate (this is required to receive full credit for the assignment)!
 
 
-## Part 4: EXTRA CREDIT Logging an attack!
+## Part 4: EXTRA CREDIT Logging an attack (2pts)!
 
 Now that we have logging set up in multiple places within our password manager, lets also log one of the most basic cybersecurity attacks, brute force attacks! A brute force attack is when an adversary will attempt to brute force a login by trying trying many different potential credentials. This can be as simple as guessing the password or can be more complex involving scripts. 
 
-For this extra credit portion, add some code to the `login.php` script to check if a user is attempting to brute force, and if they are display a warning and block them from attempting further login attempts. You should then also log the brute force attempt to loggly.
+For this extra credit portion, add some code to the `login.php` script to check if a user is attempting to brute force, and if they are display a warning and block them from attempting further login attempts. You should then also log the brute force attempt to loggly. You will need to submit screenshots of your code to check for brute force attacks as well as screenshots of your Loggly account showing brute force attacks being logged.
 
 You are encouraged to use any resource at your disposal for this portion, including ChatGPT! 
