@@ -73,7 +73,7 @@ You may have noticed that there is a weird cookie that is always there when you 
 
 We can use `PHPSESSID` to manage the authentication and authorization for our web application!
 
-1. Open login.php and look at lines 28-57. You should see the following code:
+1. Open login.php and find the portion of the code we use to validate user credentials. You should see the following code:
 
     ```
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
