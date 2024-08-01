@@ -135,7 +135,7 @@ For our next XSS attack, see if you can alter the URL of some webpage so that wh
 
 ## For Credit
 
-Choose any of the following activities in order to earn 5 points to complete for your lab! Provide a screenshot for each in your write up along with the steps to reproduce.
+Choose any of the following activities in order to earn 3 points to complete for your lab! Provide a screenshot for each in your write up along with the steps to reproduce.
 
 - .5 pt Log in as Admin without using their password.
 
@@ -146,7 +146,5 @@ Choose any of the following activities in order to earn 5 points to complete for
 - 2 pt Create a false pop-up asking your victim for confidential information whenever they access a vault.
 
 - 2 pt Patch the vulnerability that allows logging in without credentials!
-
-- 3 pt Create a payload to return all the USER passwords from the system (HINT: SEE SQL Keywords Above)
 
 - 5 pt AND NO WRITEUP REQUIRED if you can obtain one of your lab partners session id (It's likely you will need to use either advanced XSS or a combination of XSS and SQLi)
