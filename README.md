@@ -46,7 +46,7 @@ For this lab, create as many individual pytests that check if these vulnerabilit
 
 ![ChatGPT](/lab-writeup-imgs/chatgpt_ftw.png)
 
-Feel free to use ChatGPT to write/refine these tests and remediate the vulnerabilities.  When you have successfully remediated an issue and created the test case to prove the issue is remediated post it to the class discussion in Canvas for this lab [here](https://canvas.uw.edu/courses/1697011/discussion_topics/8757553)
+Feel free to use ChatGPT to write/refine these tests and remediate the vulnerabilities.  When you have successfully remediated an issue and created the test case to prove the issue is remediated post it to the class discussion in Canvas.
 
 ## For Credit
 
